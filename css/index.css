@@ -1,0 +1,47 @@
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== header ===== */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head > .indigo {
+    font-size: 26px;
+    font-weight: normal;
+    padding: 15px;
+    margin-left: 30px;
+    color: blue;
+}
+
+.gnb {
+    display: flex;
+    margin-right: 30px;
+}
+
+.gnb li {
+    padding: 15px;
+    color: blue;
+}
+
+/* ===== main =====*/
+.main-img > img {
+    width: 100%;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-ul {
+    display: flex;
+}
+
+.icon-ul > li {
+    width: 25%;
+}
