@@ -37,6 +37,35 @@
     text-decoration: underline;
 }
 
+@media (max-width:768px) {
+    /* ===== header ===== */
+.head > .indigo {
+    font-size: 20px;
+    font-weight: normal;
+    padding: 15px;
+    margin-left: 10px;
+    color: blue;
+}
+
+.gnb {
+    display: flex;
+    margin-right: 10px;
+}
+
+.gnb li {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.gnb a {
+    color: blue;
+}
+
+.gnb a:hover {
+    text-decoration: underline;
+}
+}
+
 /* ===== main =====*/
 .main-img img {
     width: 100%;
@@ -171,8 +200,12 @@
     color: blue;
 }
 
+.flex-box3 {
+    display: flex;
+}
+
 .contact-word {
-    width: 35%;
+    width: 60%;
     margin-left: 100px;
 }
 
@@ -185,8 +218,8 @@
 }
 
 .contact-word2 {
-    width: 35%;
-    margin-left: 20px;
+    width: 20%;
+    margin-left: 50px;
 }
 
 .contact-word2 > p {
@@ -344,6 +377,7 @@
     /* blog */
     .blog-box {
         display: block;
+        margin-bottom: 120px;
     }
 
     .blog-box > h2 {
@@ -378,22 +412,30 @@
     
     /* contact */
     .flex-box2 {
-        display: flex;
+        display: block;
+        justify-content: space-between;
     }
     
     .contact > h2 {
+        text-align: center;
         font-weight: normal;
-        font-size: 50px;
+        font-size: 40px;
         color: blue;
+        margin-bottom: 100px;
+    }
+
+    .flex-box3 {
+        width: 100%;
+        display: flex;
     }
     
     .contact-word {
-        width: 35%;
-        margin-left: 100px;
+        width: 50%;
+        margin-left: 50px;
     }
     
     .contact-word > p {
-        font-size: 20px;
+        font-size: 14px;
         color: blue;
         padding-bottom: 10px;
         margin-bottom: 50px;
@@ -401,21 +443,26 @@
     }
     
     .contact-word2 {
-        width: 35%;
+        width: 50%;
         margin-left: 20px;
+        margin-right: 50px;
     }
     
     .contact-word2 > p {
-        font-size: 20px;
+        font-size: 14px;
         color: blue;
         padding-bottom: 10px;
-        margin-bottom: 160px;
+        margin-bottom: 140px;
+    }
+
+    #textarea {
+        width: 350px;
     }
     
     .button {
-        width: 200px; height: 60px;
+        width: 150px; height: 50px;
         margin-top: 50px;
-        margin-left: 210px;
+        margin-left: 230px;
         text-align: center;
         background-color: blue;
     }
@@ -425,14 +472,14 @@
     }
     
     .button > a {
-        line-height: 60px;
-        font-size: 20px;
+        line-height: 50px;
+        font-size: 14px;
         color: white;
     }
     
     /* map */
     .map {
-        margin-top: 150px;
+        margin-top: 100px;
     }
 }
 
