@@ -1,5 +1,6 @@
 .wrapper {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -37,7 +38,7 @@
 }
 
 /* ===== main =====*/
-.main-img > img {
+.main-img img {
     width: 100%;
 }
 
@@ -154,6 +155,11 @@
     border: 1px solid blue;
 }
 
+/* blog */
+.blog-box {
+    display: none;
+}
+
 /* contact */
 .flex-box2 {
     display: flex;
@@ -211,6 +217,223 @@
 /* map */
 .map {
     margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+    /* flex-box */
+    .flex-box {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        justify-content: initial;
+        margin-top: 100px;
+    }
+    
+    .flex-box > h2 {
+        font-weight: normal;
+        font-size: 40px;
+        color: blue;
+        margin-bottom: 20px;
+    }
+    
+    .flex-box > p {
+        line-height: 1.8;
+        border: none;
+        padding: 0;
+    }
+    
+    /* icon-box */
+    .icon-box {
+        margin-top: 150px;
+    }
+    
+    .icon-ul {
+        display: flex;
+        align-items: end;
+    }
+    
+    .icon-ul > li {
+        width: 25%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .icon-ul > li > h3 {
+        font-weight: normal;
+        font-size: 16px;
+        color: blue;
+        padding: 15px;
+    }
+    
+    .icon-ul > li > p {
+        font-size: 12px;
+    }
+
+    .icon-ul > li > img {
+        width: 60px;
+    }
+    
+    /* main-line1 */
+    .main-line1 {
+        margin-bottom: 50px;
+        border: none;
+    }
+    
+    /* work */
+    .work {
+        font-weight: normal;
+        font-size: 40px;
+        color: blue;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .work-img {
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+    }
+    
+    .work-img li > .space {
+        position: relative;
+    }
+    
+    .work-img li > .space::after {
+        position: absolute;
+        left: 0; top: 0;
+        content: ''; 
+        opacity: 0;
+        background-color: blue;
+        height: 100%; width: 100%;
+        transition: all 0.5s;
+    }
+    
+    .work-img li > .space:hover::after {
+        opacity: 0.5;
+    }
+    
+    .work-img li > .space > p {
+        position: absolute;
+        left: 0; top: 0;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.5s;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    .work-img li > .space > p > span {
+        font-size: 14px;
+    }
+    
+    .work-img li > .space:hover > p {
+        opacity: 1;
+    }
+    
+    .work-img img {
+        width: 100%;
+    }
+    
+    /* main-line2 */
+    .main-line2 {
+        margin: 100px auto;
+        width: 20px;
+        border: 1px solid blue;
+    }
+
+    /* blog */
+    .blog-box {
+        display: block;
+    }
+
+    .blog-box > h2 {
+        font-size: 40px;
+        color: blue;
+        text-align: center;
+        font-weight: normal;
+        margin-bottom: 60px;
+    }
+
+    .blog-box .blog-img {
+        display: flex;
+    }
+
+    .blog-box .blog-img > div {
+        padding: 10px;
+    }
+
+    .blog-box .blog-img > div > img {
+        width: 100%;
+    }
+
+    .blog-box .blog-img > div p {
+        padding: 3px;
+    }
+
+    .blog-box .blog-img > div span {
+        font-size: 12px;
+        color: #aaa;
+        margin-bottom: 5px;
+    }
+    
+    /* contact */
+    .flex-box2 {
+        display: flex;
+    }
+    
+    .contact > h2 {
+        font-weight: normal;
+        font-size: 50px;
+        color: blue;
+    }
+    
+    .contact-word {
+        width: 35%;
+        margin-left: 100px;
+    }
+    
+    .contact-word > p {
+        font-size: 20px;
+        color: blue;
+        padding-bottom: 10px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid black;
+    }
+    
+    .contact-word2 {
+        width: 35%;
+        margin-left: 20px;
+    }
+    
+    .contact-word2 > p {
+        font-size: 20px;
+        color: blue;
+        padding-bottom: 10px;
+        margin-bottom: 160px;
+    }
+    
+    .button {
+        width: 200px; height: 60px;
+        margin-top: 50px;
+        margin-left: 210px;
+        text-align: center;
+        background-color: blue;
+    }
+    
+    .button:hover {
+        background-color: black;
+    }
+    
+    .button > a {
+        line-height: 60px;
+        font-size: 20px;
+        color: white;
+    }
+    
+    /* map */
+    .map {
+        margin-top: 150px;
+    }
 }
 
 /* ===== footer ===== */
