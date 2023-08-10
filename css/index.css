@@ -4,3 +4,228 @@
     max-width: 1024px;
     margin: 0 auto;
 }
+
+/* ===== header ===== */
+/* head */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* indigo */
+.head .indigo {
+    font-size: 24px;
+    font-weight: normal;
+    padding: 20px;
+    color: blue;
+}
+
+/* gnb */
+.head .gnb {
+    display: none;
+}
+
+.head .gnb li {
+    padding: 5px;
+}
+
+.head .gnb li:last-child {
+    padding-right: 20px;
+}
+
+.head .gnb li a {
+    font-size: 14px;
+    color: blue;
+}
+
+/* mo-btn */
+
+/* ===== main ===== */
+/* article */
+article img {
+    width: 100%;
+}
+
+/* weare-box */
+.weare-box {
+    margin-bottom: 50px;
+}
+
+.weare-box h2 {
+    font-size: 45px;
+    color: blue;
+    font-weight: normal;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.weare-box p {
+    padding: 10px;
+    text-align: center;
+}
+
+/* icon-box */
+.icon-box li {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.icon-box li img {
+    width: 80px;
+}
+
+.icon-box li h3 {
+    margin: 20px 0;
+    color: blue;
+}
+
+.icon-box li p {
+    padding: 5px;
+}
+
+/* main-line1 */
+.main-line1 {
+    width: 100%;
+    margin: 80px 0;
+}
+
+/* work */
+.work {
+    font-size: 45px;
+    color: blue;
+    font-weight: normal;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* work-img */
+.work-img {
+    width: 100%;
+}
+
+.work-img li img {
+    width: 100%;
+}
+
+.work-img li:nth-child(5),
+.work-img li:nth-child(6),
+.work-img li:nth-child(7),
+.work-img li:last-child {
+    display: none;
+}
+
+/* main-line2 */
+.main-line2 {
+    width: 25px;
+    margin: 60px auto;
+    border: 2px solid blue;
+}
+
+/* blog-box */
+.blog-box h2 {
+    font-size: 45px;
+    color: blue;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* blog-img-box */
+.blog-img-box {
+    width: 100%;
+}
+
+.blog-img-box .blog-img {
+    margin-bottom: 50px;
+}
+
+.blog-img-box .blog-img img,
+.blog-img-box .blog-img p {
+    width: 100%;
+    padding: 2px 20px;
+}
+
+.blog-img-box .blog-img p {
+    font-size: 18px;
+}
+
+.blog-img-box .blog-img span {
+    font-size: 14px;
+    color: #999;
+}
+
+/* flex-box1 */
+.flex-box1 .contact h2 {
+    font-size: 45px;
+    color: blue;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* flex-box2 */
+.flex-box2 {
+    width: 100%;
+}
+
+.flex-box2 .contact-box1 {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.flex-box2 .contact-box1 p {
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    color: blue;
+    border-bottom: 2px solid black;
+}
+
+.flex-box2 .contact-box2 {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.flex-box2 .contact-box2 p {
+    margin-bottom: 130px;
+    color: blue;
+}
+
+.flex-box2 .contact-box2 #textarea {
+    width: 100%; height: 20px;
+}
+
+.flex-box2 .contact-box2 .button {
+    width: 140px; height: 45px;
+    margin-left: 303px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: blue;
+}
+
+.flex-box2 .contact-box2 .button:hover {
+    background-color: black;
+}
+
+.flex-box2 .contact-box2 .button a {
+    color: white;
+    line-height: 45px;
+}
+
+/* map */
+.map iframe {
+    width: 100%;
+}
+
+/* ===== footer ===== */
+footer .foot-logo {
+    width: 100%;
+}
+
+footer .foot-logo p {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+}
