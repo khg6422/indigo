@@ -22,7 +22,7 @@
 }
 
 /* gnb */
-.head nav {
+.head .gnb {
     display: none;
 }
 
@@ -51,7 +51,7 @@
 }
 
 /* gnb */
-.head nav {
+.head .gnb {
     display: block;
 }
 
